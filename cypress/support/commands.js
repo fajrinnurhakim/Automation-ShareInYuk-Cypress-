@@ -14,7 +14,6 @@
 Cypress.Commands.add("loginCommand", (email, password) => {
     cy.get("#email").type(email);
     cy.get("#password").type(password);
-    cy.get("input.checkbox-xs").click();
     cy.get(".btn.btn-secondary").contains("Login").click();
 });
 

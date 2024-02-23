@@ -6,14 +6,14 @@ describe("j-vac App", () => {
     });
 
     it("Login Success", () => {
-        login.loginSuccess;
+        login.loginSuccess();
     });
 
     it("Login Wrong Password", () => {
-        login.loginWrongPassword;
+        login.loginWrongPassword();
     });
 
     it("Login Required Field", () => {
-        login.loginRequired;
+        login.loginRequired();
     });
 });

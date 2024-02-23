@@ -18,7 +18,7 @@ Cypress.Commands.add("loginCommand", (email, password) => {
     cy.get(".btn.btn-secondary").contains("Login").click();
 });
 
-Cypress.Commands.add("registerCommand", (name, image, email, password) => {
+Cypress.Commands.add("registerCommand", (name, email, password) => {
     cy.get("#name").type(name);
     cy.get("#email").type(email);
     cy.get("#password").type(password);
